@@ -17,8 +17,8 @@ Inspecting [`dco-bash.awk`](dco-bash.awk) is encouraged before executing.
 
 ```bash
 mkdir -p ~/.local/share/bash-completion/completions
-echo 'function dco { docker compose "$@"; }' >> ~/.bashrc
-docker completion bash | awk -f <(curl -sL https://raw.githubusercontent.com/nv6/dco/master/dco-bash.awk)
+curl -fsSL https://raw.githubusercontent.com/nv6/dco/master/dco.bashrc >> ~/.bashrc
+docker completion bash | awk -f <(curl -fsSL https://raw.githubusercontent.com/nv6/dco/master/dco-bash.awk)
 ```
 
 or with wget:
