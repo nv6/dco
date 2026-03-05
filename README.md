@@ -17,7 +17,7 @@ curl -fsL https://raw.githubusercontent.com/nv6/dco/master/install.bash | bash
 ```
 
 > [!tip]
-> This was tested on Debian 13 and Ubuntu 24 LTS, but should work with any OS running bash normally. In the rare case the completions path `~/.local/share/bash-completion/completions` must be changed, do so [here](./dco-bash.awk#L2).
+> This was tested on Debian 13 and Ubuntu 24 LTS, but should work with any OS running bash normally. In the rare case the completions path `~/.local/share/bash-completion/completions` must be changed, do so [here](./install.bash#L11).
 
 ### zsh
 
