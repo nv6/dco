@@ -1,5 +1,5 @@
 BEGIN {
-  out = ENVIRON["HOME"] "/.local/share/bash-completion/completions/dco"
+  out = ENVIRON["COMPLETIONS_PATH"] "/dco"
   print "" > out
   close(out)
 }

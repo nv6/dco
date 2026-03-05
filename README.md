@@ -9,32 +9,22 @@ Docker Compose CLI v2 alias with proper shell completion for bash<!--/zsh/fish--
 
 ## Installation
 
-The alias and completion script can be installed [automatically](#automatic-configuration) or added [manually](#manual-configuration).
-
-### Automatic Configuration
-
-Inspecting [`dco-bash.awk`](dco-bash.awk) is encouraged before executing.
+### bash
 
 ```bash
-mkdir -p ~/.local/share/bash-completion/completions
-curl -fsSL https://raw.githubusercontent.com/nv6/dco/master/dco.bashrc >> ~/.bashrc
-docker completion bash | awk -f <(curl -fsSL https://raw.githubusercontent.com/nv6/dco/master/dco-bash.awk)
-```
-
-or with wget:
-```bash
-docker completion bash | awk -f <(wget -qO- https://raw.githubusercontent.com/nv6/dco/master/dco-bash.awk)
+curl -fsL https://raw.githubusercontent.com/nv6/dco/master/install.bash | bash
+. ~/.bashrc
 ```
 
 > [!tip]
-> This was tested on Debian 13 but should work with any OS running bash normally. In the rare case the output dir `~/.local/share/bash-completion/completions` needs to be modified, do so [here](./dco-bash.awk#L2).
+> This was tested on Debian 13 and Ubuntu 24 LTS, but should work with any OS running bash normally. In the rare case the completions path `~/.local/share/bash-completion/completions` must be changed, do so [here](./dco-bash.awk#L2).
 
-### Manual Configuration
+### zsh
 
 - [ ] TODO
 
 ## Usage
 
-After installing, exit and reopen the terminal session, or just run `. ~/.bashrc`.
+`dco` acts nearly identical to `docker compose` including tab-completions.
 
-You should now be able to tab-complete the alias `dco` identically to `docker compose`.
+Some convenience enhancements are also added. Run `dco -H` to show extra functionality.
