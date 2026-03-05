@@ -11,7 +11,7 @@ REPO='https://raw.githubusercontent.com/nv6/dco/master'
 export COMPLETIONS_PATH="$HOME/.local/share/bash-completion/completions"
 
 # quiet mode: suppress all echos if -q flag passed
-[ "$1" = "-q" ] && { echo () {:;}; shift; } || DEBUG=1
+[ "$1" = "-q" ] && { echo() { :; }; shift; } || DEBUG=1
 
 if [[ ! -d "$COMPLETIONS_PATH" || ! -d ~/.bashrc.d ]]; then
     echo -e '\n\U23F3 Creating directory structures...'
