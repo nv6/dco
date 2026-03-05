@@ -28,3 +28,11 @@ curl -fsL https://raw.githubusercontent.com/nv6/dco/master/install.bash | bash
 `dco` acts nearly identical to `docker compose` including tab-completions.
 
 Some convenience enhancements are also added. Run `dco -H` to show extra functionality.
+
+## Uninstalling
+
+### bash
+
+```bash
+curl -fsL https://raw.githubusercontent.com/nv6/dco/master/uninstall.sh | sh
+```
